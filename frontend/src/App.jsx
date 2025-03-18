@@ -8,6 +8,8 @@ import "highlight.js/styles/github-dark.css";
 import axios from "axios";
 import "./App.css";
 
+const API_URL = process.env.REACT_APP_BACKEND_URL || "http://localhost:3000";
+
 function App() {
   const [code, setCode] = useState("");
   const [review, setReview] = useState("");
@@ -26,7 +28,7 @@ function App() {
     }
 
     try {
-      const response = await axios.post("http://localhost:3000/ai/get-review", {
+      const response = await axios.post(`${API_URL}/ai/get-review`, {
         code,
       });
       setReview(response.data);
@@ -48,9 +50,7 @@ function App() {
         <div className="left">
           <div className="editor-container">
             {!code && (
-              <div className="placeholder">
-                Type your code to be reviewed...
-              </div>
+              <div className="placeholder">Type your code to be reviewed...</div>
             )}
             <Editor
               value={code}
@@ -60,7 +60,7 @@ function App() {
               }
               padding={10}
               style={{
-                fontFamily: '"Fira code", "Fira Mono", monospace',
+                fontFamily: '"Fira Code", "Fira Mono", monospace',
                 fontSize: 16,
                 width: "100%",
                 minHeight: "100%",
@@ -77,7 +77,7 @@ function App() {
         <div
           className="right"
           style={{
-            fontFamily: '"Fira code", "Fira Mono", monospace"',
+            fontFamily: '"Fira Code", "Fira Mono", monospace',
             fontSize: 16,
             height: "100%",
             width: "100%",
