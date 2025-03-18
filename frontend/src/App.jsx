@@ -8,7 +8,7 @@ import "highlight.js/styles/github-dark.css";
 import axios from "axios";
 import "./App.css";
 
-const API_URL = process.env.REACT_APP_BACKEND_URL || "http://localhost:3000";
+const API_URL = import.meta.env.VITE_BACKEND_URL || "http://localhost:3000";
 
 function App() {
   const [code, setCode] = useState("");
