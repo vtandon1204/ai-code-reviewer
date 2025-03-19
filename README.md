@@ -1,6 +1,6 @@
-# AI Code Reviewer
+# AI CodeX
 
-*AI Code Reviewer* is an intelligent, automated code analysis tool designed to help developers improve their code quality. It leverages AI to detect inefficiencies, enforce best practices, and provide optimization suggestions. 
+*AI CodeX* is an intelligent, automated code analysis tool designed to help developers improve their code quality. It leverages AI to detect inefficiencies, enforce best practices, and provide optimization suggestions. 
 
 Whether you're a beginner looking for coding guidance or an experienced developer aiming for cleaner, more efficient code, this tool streamlines the review process with real-time feedback.
 

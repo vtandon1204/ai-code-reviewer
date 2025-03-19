@@ -44,7 +44,7 @@ function App() {
   return (
     <>
       <header>
-        <h1>AI Code Reviewer</h1>
+        <h1>AI CodeX</h1>
       </header>
       <main>
         <div className="left">
