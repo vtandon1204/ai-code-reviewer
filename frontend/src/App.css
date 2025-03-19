@@ -87,8 +87,8 @@ main .left .review {
 
 .placeholder {
   position: absolute;
-  top: 13px;
-  left: 14px;
+  top: 11px;
+  left: 13px;
   color: #888;
   font-size: 16px;
   font-family: "Fira Code", monospace;
