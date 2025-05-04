@@ -12,6 +12,7 @@ import "./App.css";
 const API_URL = import.meta.env.VITE_BACKEND_URL || "http://localhost:3000";
 
 function App() {
+  // State variables
   const [code, setCode] = useState("");
   const [review, setReview] = useState("");
   const [showContacts, setShowContacts] = useState(false);
@@ -20,6 +21,7 @@ function App() {
     prism.highlightAll();
   }, []);
 
+  // Function to handle code review
   async function reviewCode() {
     if (!code.trim()) {
       setReview("⚠️ Please enter some code to review.");
